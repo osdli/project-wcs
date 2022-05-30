@@ -1,3 +1,74 @@
+@import "~bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
-    background-color: lightgray;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 2em;
+}
+
+header img {
+    max-width: 96px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+footer {
+    background: white;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.new-member-form {
+    margin: 2em 0 4em 0;
+    text-align: center;
+}
+
+.member-item {
+    padding: 0.25em 0;
+}
+
+footer {
+    position: relative;
+    margin-top: 2em;
+    text-align: center;
+    color: #fff;
+    background: #f76c6c;
+    padding: 0.25em 0;
+}
+.container-form{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.container-form .mb-3{
+    text-align: center;
+
+}
+
+.container-form .mb-3{
+    text-align: center;
+}
+.message{
+    text-align: center;
 }

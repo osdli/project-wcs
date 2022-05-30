@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page d'accueil!{% endblock %}
+
+{% block body %}
+
+    <main>
+        <!-- New member form -->
+        <h2>Ajouter un(e) Argonaute</h2>
+        <div class="message">
+            {{ message }}
+        </div>
+        <div class="container-form">
+            {{ form(form) }}
+
+            <!-- Member list -->
+            <h2>Membres de l'équipage</h2>
+
+            <div class="container">
+                <div class="row">
+                    {% if members %}
+                    {% for member in members %}
+
+                        <div class="col-4">
+                            {{ member.name|e }}
+                        </div>
+
+                    {% endfor %}
+                </div>
+            </div>
+        {% else %}
+            <p>Il n'y a pas d'argonauts(es) pour l'instant </p>
+            {% endif %}
+        </div>
+
+
+    </main>
+
+
+
+{% endblock %}
